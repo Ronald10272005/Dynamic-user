@@ -1,0 +1,125 @@
+/* Universal Styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: medium;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header styles */
+header{
+    padding: 30px 20px;
+    margin: 20px;
+    box-shadow: 5px 4px 10px rgba(5,18,17, 0.2);
+    border-radius: 20px;
+    background-color: rgb(173, 128, 242);
+    text-align: center;
+}
+
+header > h1{
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: serif;
+    color: white;
+}
+
+header > small{
+    font-size: large;
+    font-weight: bolder;
+    font-family: serif;
+    color: rgb(240, 235, 255);
+}
+
+/* Form Styles */
+#formContainer{
+    padding: 20px 20px;
+    margin: 20px;
+    box-shadow: 5px 4px 10px rgba(5,18,17, 0.2);
+    border-radius: 20px;
+    background-color: rgb(216, 213, 255);
+}
+
+#formContainer > #studentform >.input-fields > label{
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 5px;
+    color: rgb(80, 50, 140);
+}
+
+#formContainer > #studentform >.input-fields > input {
+    border: 2px solid rgb(215, 176, 241);
+    border-radius: 10px;
+    padding: 10px 100px;
+}
+
+#formContainer > #studentform >.input-fields {
+    display: flex;
+    flex-direction: column;
+}
+
+#formContainer > #studentform button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(194, 19, 19);
+    color: rgb(255, 251, 251);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#formContainer > #studentform button:hover {
+    background-color: rgb(230, 140, 0);
+}
+
+article {
+    background-color: rgb(181, 175, 208);
+}
+
+.list-item{
+    padding: 20px 20px;
+    margin: 20px;
+    box-shadow: 5px 4px 10px rgba(5,18,17, 0.2);
+    border-radius: 20px;
+    background-color: rgb(160, 161, 209);
+}
+
+#formContainer > #studentForm :last-child > button {
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 15px;
+    font-weight: bolder;
+    text-align: center;
+    background-color: rgb(180, 11, 11);
+    color: rgb(227, 224, 224);
+    cursor: pointer;
+}
+
+/* For list container */
+#studentList{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+
+}
+
+/* responsive design */
+@media (width <= 320px){
+    #studentlist > .list-item{
+        grid-column: span 12;
+    }
+}
+/* Tablet */
+@media (widthh > 320px) and (width <= 600px){
+    #studentList > .list-item{
+        grid-column: span 4;
+    }
+}
+/* Desktop */
+@media (width >= 1000px){
+    #studentList > .list-item{
+        grid-column: span 2;
+    }
+}
